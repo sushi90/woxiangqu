@@ -21,20 +21,20 @@ var configs = {
     },
     production: {
         db: {
-            mongoURI:'mongodb://mdemo:mdemo@widmore.mongohq.com:10010/end'
+            mongoURI:''
         },
         github: {
-            clientID: '72b019502b369a89b92a',
-            clientSecret: 'c5e5bd32d210316b0e398eda9c93a66a28d7ba85',
-            callbackURL: 'http://woxiangqu.com/auth/github/callback'
+            clientID: '',
+            clientSecret: '',
+            callbackURL: ''
         },
         weibo: {
-            clientID: "199676228",
-            clientSecret: "afd83fb2635efe3968843d7f77271ab7",
-            callbackURL: "http://woxiangqu.com/auth/weibo/callback"
+            clientID: "",
+            clientSecret: "",
+            callbackURL: ""
         },
         port: 2368,
-        sessionSecret: 'woxiangqu.com2014'
+        sessionSecret: ''
     }
 };
 module.exports = configs[process.env.NODE_ENV || 'development'];
