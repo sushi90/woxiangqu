@@ -1,0 +1,22 @@
+<div class="ui secondary">
+    <div class="tabular ui menu">
+        {{#question.codes}}
+            <a class="item {{active}} " data-tab="{{tab}}" {{#if active}} id="tab-first"{{/if}}>{{tab}}</a>
+        {{/question.codes}}
+    </div>
+</div>
+<div class="ui  secondary  segment">
+    {{#question.codes}}
+        <div class="ui tab" data-tab="{{tab}}">
+            <div id="editor-{{tab}}">{{code}}</div>
+        </div>
+    {{/question.codes}}
+</div>
+<script>
+    var tabs = [];
+        {{#question.codes}}
+        tabs['{{@index}}'] = '{{tab}}';
+        {{/question.codes}}
+    var showPreview = '{{question.preview}}';
+    var editor = true;
+</script>

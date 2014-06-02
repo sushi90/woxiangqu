@@ -1,0 +1,40 @@
+{{!< default}}
+{{#contentFor 'ownCSS'}}
+    <link rel="stylesheet" href="/css/search.css"/>{{/contentFor}}
+{{#contentFor 'ownJS'}}
+    <script src="/javascript/search.js"></script>
+    <script src="/javascript/baidu.js"></script>
+{{/contentFor}}
+
+<div class="ui grid">
+    <div class="four wide column">
+        {{>companys}}
+    </div>
+    <div class="twelve wide column">
+        <div class="ui secondary   segment">
+            <div class="ui secondary purple pointing menu">
+                <a class="{{all}} item" href="{{pathName}}">
+                    所有
+                </a>
+                <a class="{{javascript}} item" href="{{pathName}}?lang=javascript">
+                     javascript
+                </a>
+                <a class="{{web}} item" href="{{pathName}}?lang=web">
+                    web
+                </a>
+                <a class="{{text}} item" href="{{pathName}}?lang=text">
+                    text
+                </a>
+            </div>
+        </div>
+        <div class="ui secondary segment">
+            <div class="ui animated divided  list">
+                {{>questions}}
+            </div>
+        </div>
+        <div class="ui secondary segment">
+            {{>pagination}}
+        </div>
+    </div>
+</div>
+

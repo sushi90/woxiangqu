@@ -1,0 +1,13 @@
+<div class="ui pagination menu">
+    {{#ifs pageNum '>' 1}}
+        <a class="icon item" href="{{pageURL}}{{math pageNum '-' 1}}">
+            <i class="left arrow icon"></i>
+        </a>
+    {{/ifs}}
+    {{pagination pageNum pageCount pageURL}}
+    {{#ifs pageCount '>' pageNum}}
+        <a class="icon item" href="{{pageURL}}{{math pageNum '+' 1}}">
+            <i class="right arrow icon"></i>
+        </a>
+    {{/ifs}}
+</div>

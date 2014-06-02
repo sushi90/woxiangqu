@@ -1,0 +1,22 @@
+{{!< default}}
+{{#contentFor 'ownCSS'}}
+    <link rel="stylesheet" href="/css/index.css"/>{{/contentFor}}
+{{#contentFor 'ownJS'}}
+    <script src="/javascript/index.js"></script>
+{{/contentFor}}
+<div class="column cover">
+</div>
+
+<div class="ui three items ">
+    {{#companys}}
+            <a class="item" href="/search/{{name}}">
+                <div class="floating ui purple  label">{{questionCount}}</div>
+                <div class="content">
+                    <div class="name">{{name}}</div>
+                    <p class="description">
+                        {{intro}}
+                    </p>
+                </div>
+            </a>
+    {{/companys}}
+</div>

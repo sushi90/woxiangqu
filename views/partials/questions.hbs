@@ -1,0 +1,29 @@
+{{#questions}}
+    <a class=" item" href="/question/{{_id}}">
+        <div class="ui  segment">
+            <div class=" header">
+                {{title}}
+            </div>
+            <div class=" content">
+                {{intro}}
+            </div>
+            <div>
+                <a class="ui teal label">
+                    {{author}}
+                </a>
+                <a class="ui orange label">
+                    {{language}}
+                </a>
+                <a class="ui blue label">
+                    {{company}}
+                </a>
+                {{#each tags}}
+                    <a class="ui purple label">
+                        {{this}}
+                    </a>
+                {{/each}}
+            </div>
+        </div>
+    </a>
+
+{{/questions}}

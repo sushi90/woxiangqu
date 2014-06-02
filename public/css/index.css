@@ -1,0 +1,12 @@
+.cover{
+    background: url('../images/cover.jpg') no-repeat;
+    background-size: 100% 350px;
+    height: 350px;
+}
+.tags{
+    margin-left: 80px!important;
+    margin-right: 80px!important;
+}
+.ui.items > .item{
+    min-height: 0!important;
+}

@@ -1,0 +1,14 @@
+<div class="ui purple   vertical menu company">
+    <div class="item">
+        <div class="ui icon input">
+            <input type="text" placeholder="输入公司名称">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    {{#companys}}
+    <a class="{{active}} item" href="/search/{{name}}">
+        <div class="ui purple label">{{questionCount}}</div>
+        {{name}}
+    </a>
+    {{/companys}}
+</div>

@@ -1,0 +1,27 @@
+
+html,
+body {
+    font-size: 15px;
+    height: 100%;
+}
+body {
+    font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+a{
+    text-decoration:none;
+}
+#menu{
+    line-height: 45px;
+}
+#main {
+    min-height: 600px
+}
+
+#footer {
+    line-height: 80px;
+    width: 100%;
+}

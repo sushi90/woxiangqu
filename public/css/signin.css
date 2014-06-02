@@ -1,0 +1,12 @@
+.signin_module{
+    margin-top: 50px !important;
+}
+.signin_buttons{
+    margin-bottom: 20px;
+}
+.logo-square {
+    background: transparent url(http://d3l8wp33uu8nxs.cloudfront.net/assets/logos/logo-square-red-big-4e51d3c67160dc4d16ffde19adfcd0fc.png) top left no-repeat;
+    width: 180px;
+    height: 212px;
+    margin: 30px auto ;
+}

@@ -1,0 +1,22 @@
+
+#message {
+    margin-top: 20px;
+}
+
+.preview-fullscreen {
+    border: 0;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.preview-normal {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}

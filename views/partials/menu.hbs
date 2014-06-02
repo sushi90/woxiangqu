@@ -1,0 +1,51 @@
+<div class="ui  inverted purple secondary     menu" id="menu">
+    <div class="right menu">
+        <a class="{{menuIndex}} item" href="/">
+            <i class="home icon"></i>首页
+        </a>
+        <a class="{{menuSearch}} item" href="/search">
+            <i class="search icon"></i>查询
+        </a>
+        {{#if signin}}
+            <div class="ui  dropdown link {{menuNew}} item" >
+                <i class="add icon"></i>添加
+                <div class="ui  menu">
+                    <a class="item" href="/question/create/web">
+                        web
+                    </a>
+                    <a class="item" href="/question/create/javascript">
+                        javascript
+                    </a>
+                    <a class="item" href="/question/create/text">
+                        文本题目
+                    </a>
+                </div>
+            </div>
+
+        {{else}}
+
+            <div class="ui  dropdown link item" id="signin">
+                <i class="sign in icon"></i>登录
+                <div class="ui  menu">
+                    <a class="active item" href="/auth/github">
+                        <i class="github sign  icon"></i>GitHub
+                    </a>
+                    <a class="item" href="/auth/weibo">
+                        <i class="weibo icon"></i>微博
+                    </a>
+                </div>
+            </div>
+        {{/if}}
+        {{#if signin}}
+            <div class="ui  dropdown item" id="user">
+                <img class="ui avatar image" src="{{gravatar}}">
+
+                <div class="  menu">
+                    <a class="item" href="/signout">
+                        <i class="sign out icon"></i>退出
+                    </a>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>

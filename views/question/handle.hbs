@@ -1,0 +1,55 @@
+{{!< default}}
+{{#contentFor 'ownCSS'}}
+{{/contentFor}}
+{{#contentFor 'ownJS'}}
+    <script src="http://cdn.bootcss.com/jquery.address/1.6/jquery.address.min.js"></script>
+    <script src="http://cdn.bootcss.com/ace/1.1.3/ace.js"></script>
+    {{#if update}}
+        <script>
+            var update = true;
+            var language = '{{question.language}}';
+        </script>
+    {{else}}
+        <script>
+            var update = false;
+        </script>
+    {{/if}}
+    <script src="/javascript/handle.js"></script>
+    {{#if testcase}}
+        <script src="/javascript/editor.js"></script>
+    {{else}}
+        <script>
+            var editor = false;
+        </script>
+    {{/if}}
+{{/contentFor}}
+
+<div class="ui secondary form">
+    <div class="field">
+        <label>题目名称</label>
+        <input type="text" placeholder="请输入题目的名称" id="title" name="title" value="{{question.title}}">
+    </div>
+    <div class="field">
+        <label>题目描述</label>
+        <textarea id="intro" name="intro">{{question.intro}}</textarea>
+    </div>
+    <div class="field">
+        <label>公司</label>
+        <input type="text" id="company" placeholder="例如百度" name="company" value="{{question.company}}">
+    </div>
+    <div class="field">
+        <label>题目标签</label>
+        <input type="text" id="tags" placeholder="多个用分号隔开" name="tags" value="{{question.tags}}">
+    </div>
+    {{#if testcase}}
+    <div class="field">
+        <label>测试用例</label>
+        {{>editor}}
+    </div>
+    {{/if}}
+    <div class="field" style="text-align: center;">
+        <button class="ui submit green button" id="submit">
+            {{title}}
+        </button>
+    </div>
+</div>

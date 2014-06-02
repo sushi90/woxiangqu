@@ -1,0 +1,31 @@
+{
+  "name": "woxiangqu",
+  "version": "0.0.2",
+  "description": "just a website",
+  "scripts": {
+    "start": "NODE_ENV=production forever start app.js",
+    "stop": "forever stop app.js"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "express-hbs": "*",
+    "passport": "*",
+    "passport-github": "*",
+    "mongoose": "*",
+    "connect-mongo": "*",
+    "passport-remember-me": "*",
+    "gravatar": "*",
+    "async": "^0.2.10",
+    "passport-weibonew": "^0.1.0",
+    "log4js": "^0.6.12",
+    "multiline": "*",
+    "wxq-css": "0.0.5",
+    "wxq-js": "0.0.4",
+    "wxq-html": "0.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1"
+  }
+}
